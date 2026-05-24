@@ -85,7 +85,7 @@
 
 (deflayer us
   XX      @exclam @at    @hash  @colon @semi  @grave XX     @amp   @star  @apos  @dash  @plus  XX
-  tab     q       w      e      r      t      @bslash y      u      i      o      p      XX     XX
+  tab     q       w      e      r      t      XX     y      u      i      o      p      XX     @bslash
   @dot    a       s      d      f      g      ret    h      j      k      l      XX     XX
   @comma  z       x      c      v      b      @lang  n      m      XX     XX     @slash volu
   @nav    lctl    lalt   lmet   @sftspc                            bspc   @num          brdn   vold   brup
@@ -93,7 +93,7 @@
 
 (deflayer ru
   XX      @exclam @at    @hash  @colon @semi  @grave XX     @amp   @star  @apos  @dash  @plus  XX
-  tab     @й      @ц     @у     @к     @е     @bslash @н     @г     @ш     @щ     @з     @х     XX
+  tab     @й      @ц     @у     @к     @е     XX     @н     @г     @ш     @щ     @з     @х     @bslash
   @dot    @ф      @ы     @в     @а     @п     ret    @р     @о     @л     @д     @ж     @э
   @comma  @я      @ч     @с     @м     @и     @lang  @т     @ьъ    @б     @ю     @slash volu
   @nav    lctl    lalt   lmet   @sftspc                            bspc   @num          brdn   vold   brup
@@ -101,16 +101,16 @@
 
 (deflayer nav
   XX      @exclam @at    @hash  @colon @semi  @grave XX     @amp     @star   @apos  @dash    @plus   XX
-  tab     XX      up     XX     XX     XX     @bslash XX       @lbrack @rbrack XX     XX       XX      XX
-  @dot    left    down   rght   XX     XX     ret    XX       @lparen @rparen @lbrace  @rbrace  XX
-  @comma  XX      del    XX     XX     XX     @lang  XX       @lt     @gt     XX       @slash   volu
+  tab     XX      up     XX     XX     XX     XX     XX     @lbrack  @rbrack XX     XX       XX      @bslash
+  @dot    left    down   rght   XX     XX     ret    XX     @lparen  @rparen @lbrace  @rbrace  XX
+  @comma  XX      del    XX     XX     XX     @lang  XX     @lt      @gt     XX       @slash   volu
   @nav    lctl    lalt   lmet   @sftspc                              bspc    @num              brdn    vold    brup
 )
 
 (deflayer num
-  XX      @exclam @at      @hash  @colon @semi  @grave XX     @amp   @star  @apos  @dash  @plus  XX
-  tab     @caret  7        8      9      @ruble @bslash XX     XX     XX     XX     XX     XX     XX
-  @dot    0       4        5      6      @dollar ret   XX     XX     XX     XX     XX     XX
-  @comma  @tilde  1        2      3      @percent @lang XX     XX     XX     XX     @slash volu
-  @nav    lctl    lalt     lmet   @sftspc                            bspc   @num          brdn   vold   brup
-)
+  XX      @exclam @at    @hash  @colon @semi  @grave XX     @amp     @star   @apos  @dash  @plus  XX
+  tab     @caret  7      8      9      @ruble XX     XX     XX       XX      XX     XX     XX     @bslash
+  @dot    0       4      5      6      @dollar ret   XX     XX       XX      XX     XX     XX
+  @comma  @tilde  1      2      3      @percent @lang XX    XX       XX      XX     @slash volu
+  @nav    lctl    lalt   lmet   @sftspc                              bspc    @num          brdn   vold   brup
+) 
