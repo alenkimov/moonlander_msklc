@@ -21,6 +21,8 @@
     (macro bspc @ъ)
   ))
 
+  её (tap-hold 200 200 @е grv)
+
   ;; language switch
   us (multi
     (set-input-source "com.apple.keylayout.US")
@@ -32,10 +34,11 @@
     (layer-switch ru)
   )
 
-  lang (tap-dance-eager 400 (
-    @us
-    @ru
-  ))
+  lang (switch
+    ((base-layer us)) @ru break
+    ((base-layer ru)) @us break
+    () @us break
+  )
 
   ;; layers
   nav (layer-while-held nav)
@@ -93,7 +96,7 @@
 
 (deflayer ru
   XX      @exclam @at    @hash  @colon @semi  @grave XX     @amp   @star  @apos  @dash  @plus  XX
-  tab     @й      @ц     @у     @к     @е     XX     @н     @г     @ш     @щ     @з     @х     @bslash
+  tab     @й      @ц     @у     @к     @её    XX     @н     @г     @ш     @щ     @з     @х     @bslash
   @dot    @ф      @ы     @в     @а     @п     ret    @р     @о     @л     @д     @ж     @э
   @comma  @я      @ч     @с     @м     @и     @lang  @т     @ьъ    @б     @ю     @slash volu
   @nav    lctl    lalt   lmet   @sftspc                            bspc   @num          brdn   vold   brup
